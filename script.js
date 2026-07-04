@@ -1,5 +1,5 @@
 /* ===================================================================
-   AUREA DENTAL — SCRIPT
+   BRIGHT SMILE DENTAL CLINIC — SCRIPT
 =================================================================== */
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -92,17 +92,20 @@ document.addEventListener('DOMContentLoaded', () => {
   =================================================================== */
   const services = [
     { icon:'fa-tooth', title:'General Dentistry', desc:'Routine checkups, cleanings, and preventive care for lifelong oral health.' },
-    { icon:'fa-screwdriver-wrench', title:'Dental Implants', desc:'Permanent, natural-looking replacements for missing teeth.' },
-    { icon:'fa-sun', title:'Teeth Whitening', desc:'Professional-grade whitening for a brighter smile in one visit.' },
-    { icon:'fa-teeth', title:'Orthodontics', desc:'Braces and aligners to straighten teeth at any age.' },
-    { icon:'fa-tooth', title:'Root Canal Treatment', desc:'Pain-free treatment to save infected or damaged teeth.' },
-    { icon:'fa-gem', title:'Dental Veneers', desc:'Thin, custom shells that transform the shape and shade of your smile.' },
-    { icon:'fa-star', title:'Smile Makeover', desc:'A fully personalized plan combining multiple treatments for your ideal smile.' },
-    { icon:'fa-child', title:'Pediatric Dentistry', desc:'Gentle, friendly dental care designed especially for children.' },
-    { icon:'fa-truck-medical', title:'Emergency Dental Care', desc:'Rapid relief and treatment when you need it most, day or night.' },
-    { icon:'fa-align-center', title:'Invisible Aligners', desc:'Discreet, removable aligners for a straighter smile without metal braces.' },
-    { icon:'fa-shield-heart', title:'Preventive Care', desc:'Regular screening and hygiene plans to catch issues early.' },
     { icon:'fa-wand-magic-sparkles', title:'Cosmetic Dentistry', desc:'Aesthetic treatments to enhance the beauty of your natural smile.' },
+    { icon:'fa-sun', title:'Teeth Whitening', desc:'Clinically approved whitening systems for a brighter smile in one visit.' },
+    { icon:'fa-screwdriver-wrench', title:'Dental Implants', desc:'Permanent, natural-looking replacements for missing teeth.' },
+    { icon:'fa-gem', title:'Dental Veneers', desc:'Thin, custom shells that transform the shape and shade of your smile.' },
+    { icon:'fa-teeth', title:'Orthodontics', desc:'Braces and aligners to straighten teeth at any age.' },
+    { icon:'fa-align-center', title:'Invisalign', desc:'Discreet, removable aligners for adults and teenagers.' },
+    { icon:'fa-tooth', title:'Root Canal Treatment', desc:'Pain-free treatment to save infected or damaged teeth.' },
+    { icon:'fa-shapes', title:'Crowns & Bridges', desc:'Durable restorations that repair or replace damaged and missing teeth.' },
+    { icon:'fa-child', title:'Pediatric Dentistry', desc:'Gentle dental care designed especially for children.' },
+    { icon:'fa-shield-heart', title:'Gum Treatment', desc:'Diagnosis and treatment of gum disease to protect your oral health.' },
+    { icon:'fa-hand-holding-medical', title:'Tooth Extraction', desc:'Safe, comfortable removal of damaged or problematic teeth.' },
+    { icon:'fa-star', title:'Smile Makeover', desc:'A fully personalized plan combining multiple treatments for your ideal smile.' },
+    { icon:'fa-broom', title:'Dental Cleaning', desc:'Professional cleaning to remove plaque and keep your smile fresh.' },
+    { icon:'fa-truck-medical', title:'Emergency Dental Care', desc:'Rapid relief and treatment when you need it most, available 24 hours.' },
   ];
 
   const dentists = [
@@ -122,20 +125,17 @@ document.addEventListener('DOMContentLoaded', () => {
   ];
 
   const testimonials = [
-    { name:'Amina R.', treatment:'Smile Makeover', img:'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop', quote:'Aurea Dental gave me the confidence to smile freely again. The whole team made me feel completely at ease.' },
-    { name:'James T.', treatment:'Dental Implants', img:'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop', quote:'My implant procedure was seamless — practically painless, and the results look completely natural.' },
-    { name:'Fatima S.', treatment:'Invisible Aligners', img:'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop', quote:'Straightened my teeth without anyone even noticing I was wearing aligners. Highly recommend this clinic.' },
-    { name:'Michael B.', treatment:'Emergency Care', img:'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop', quote:'Had a dental emergency on a weekend and they saw me within the hour. Truly grateful for their care.' },
+    { name:'Sarah Williams', treatment:'Verified Patient', img:'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop', quote:'I had an amazing experience. The doctors were professional, caring, and made me feel completely comfortable throughout my treatment.' },
+    { name:'Ahmed Hassan', treatment:'Verified Patient', img:'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop', quote:'Excellent service with modern equipment. The clinic is spotless and the staff are incredibly friendly.' },
+    { name:'Emily Johnson', treatment:'Verified Patient', img:'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop', quote:'The best dental clinic I\u2019ve visited in Dubai. Highly recommended for anyone looking for quality dental care.' },
   ];
 
   const faqs = [
-    { q:'How often should I visit a dentist?', a:'We recommend a checkup and cleaning every six months to catch potential issues early and maintain optimal oral health.' },
-    { q:'Is teeth whitening safe?', a:'Yes — when performed by a licensed professional using approved products, whitening is safe and does not damage enamel.' },
-    { q:'Do implants last forever?', a:'With proper care and regular checkups, dental implants can last 20+ years or even a lifetime for most patients.' },
-    { q:'What should I do during a dental emergency?', a:'Call our 24/7 emergency line immediately. For a knocked-out tooth, keep it moist and see us within 30 minutes if possible.' },
-    { q:'Do you accept insurance?', a:'We work with most major insurance providers and offer flexible payment plans for treatments not fully covered.' },
-    { q:'Do you offer children\u2019s dental care?', a:'Yes, our pediatric specialists create a friendly, low-stress environment designed specifically for young patients.' },
-    { q:'Is a root canal painful?', a:'Modern root canal treatment is performed under local anesthesia and is generally no more uncomfortable than a filling.' },
+    { q:'Do you accept walk-in patients?', a:'Yes, walk-in patients are welcome depending on availability.' },
+    { q:'Do you provide emergency dental care?', a:'Yes, emergency dental services are available 24/7.' },
+    { q:'Is teeth whitening safe?', a:'Yes. We use clinically approved whitening systems that are safe and effective.' },
+    { q:'Do you offer Invisalign treatment?', a:'Yes, we provide Invisalign treatment for adults and teenagers.' },
+    { q:'Do you treat children?', a:'Yes, our pediatric dentists provide gentle dental care for children.' },
   ];
 
   const facilities = [
