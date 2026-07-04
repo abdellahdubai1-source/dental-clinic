@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aurea Dental — Luxury Dental Care & Smile Design</title>
+<meta name="description" content="Aurea Dental is a premium dental clinic offering advanced cosmetic dentistry, implants, orthodontics and emergency care with a personal, luxury patient experience.">
+<meta name="keywords" content="dental clinic, cosmetic dentistry, dental implants, teeth whitening, orthodontics, luxury dental care">
+<meta property="og:title" content="Aurea Dental — Your Perfect Smile Starts Here">
+<meta property="og:description" content="World-class dental care with advanced technology, expert dentists, and personalized treatments.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Aurea Dental",
+  "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09",
+  "telephone": "+971-4-555-0192",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Sheikh Zayed Road",
+    "addressLocality": "Dubai",
+    "addressCountry": "AE"
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div class="loader" id="loader">
+  <div class="loader-mark">
+    <svg viewBox="0 0 100 100" class="loader-tooth">
+      <path d="M50 12c-9 0-14 5-20 5-8 0-15 7-15 20 0 14 6 23 9 34 2 9 5 17 11 17 7 0 7-14 15-14s8 14 15 14c6 0 9-8 11-17 3-11 9-20 9-34 0-13-7-20-15-20-6 0-11-5-20-5z" fill="none" stroke="currentColor" stroke-width="2.5"/>
+    </svg>
+  </div>
+  <div class="loader-text">AUREA <span>DENTAL</span></div>
+</div>
+
+<!-- Scroll Progress Bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Cursor Glow -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- Navbar -->
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo">
+      <span class="logo-mark">A</span>
+      <span class="logo-text">AUREA<span>DENTAL</span></span>
+    </a>
+    <nav class="nav-menu" id="navMenu">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#dentists" class="nav-link">Dentists</a>
+      <a href="#gallery" class="nav-link">Results</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="tel:+97145550192" class="nav-phone"><i class="fa-solid fa-phone"></i> +971 4 555 0192</a>
+      <a href="#appointment" class="btn btn-primary btn-sm">Book Appointment</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" class="mobile-link">Home</a>
+  <a href="#about" class="mobile-link">About</a>
+  <a href="#services" class="mobile-link">Services</a>
+  <a href="#dentists" class="mobile-link">Dentists</a>
+  <a href="#gallery" class="mobile-link">Results</a>
+  <a href="#contact" class="mobile-link">Contact</a>
+  <a href="#appointment" class="btn btn-primary" style="margin-top:20px;">Book Appointment</a>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1920&auto=format&fit=crop" alt="Luxury dental clinic interior" loading="eager">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-shapes">
+    <span class="shape shape-1"></span>
+    <span class="shape shape-2"></span>
+    <span class="shape shape-3"></span>
+  </div>
+  <div class="hero-content container">
+    <div class="badge fade-up" data-delay="0">
+      <span class="stars">★★★★★</span> Trusted by 15,000+ Patients
+    </div>
+    <h1 class="hero-title fade-up" data-delay="1">
+      Your Perfect Smile <span class="text-gradient">Starts Here.</span>
+    </h1>
+    <p class="hero-sub fade-up" data-delay="2">
+      Experience world-class dental care with advanced technology, expert dentists, and personalized treatments designed to give you a healthier, brighter smile.
+    </p>
+    <div class="hero-btns fade-up" data-delay="3">
+      <a href="#appointment" class="btn btn-primary btn-lg ripple">Book Appointment</a>
+      <a href="#services" class="btn btn-outline btn-lg ripple">View Services</a>
+    </div>
+  </div>
+
+  <div class="hero-floating-cards">
+    <div class="float-card fc-1">
+      <i class="fa-solid fa-award"></i>
+      <div><strong>20+</strong><span>Years Experience</span></div>
+    </div>
+    <div class="float-card fc-2">
+      <i class="fa-solid fa-face-smile-beam"></i>
+      <div><strong>15,000+</strong><span>Happy Patients</span></div>
+    </div>
+    <div class="float-card fc-3">
+      <i class="fa-solid fa-microchip"></i>
+      <div><strong>Modern</strong><span>Technology</span></div>
+    </div>
+    <div class="float-card fc-4">
+      <i class="fa-solid fa-truck-medical"></i>
+      <div><strong>24/7</strong><span>Emergency Care</span></div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <span></span>
+    <p>Scroll</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about section" id="about">
+  <div class="container about-grid">
+    <div class="about-media reveal-left">
+      <img src="https://images.unsplash.com/photo-1606811951341-e29b83e01514?q=80&w=1000&auto=format&fit=crop" alt="Professional dentist portrait" class="about-img-main">
+      <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=500&auto=format&fit=crop" alt="Modern dental treatment room" class="about-img-float">
+      <div class="about-badge">
+        <strong>20+</strong>
+        <span>Years of<br>Excellence</span>
+      </div>
+    </div>
+    <div class="about-content reveal-right">
+      <span class="eyebrow">About Aurea Dental</span>
+      <h2 class="section-title">Advanced Dental Care With A Personal Touch</h2>
+      <p class="section-text">
+        For over two decades, Aurea Dental has combined precision technology with genuine, unhurried care. Every treatment plan is shaped around your comfort, your goals, and your smile — never a one-size-fits-all routine. Our specialists trained across Europe and the Gulf bring an international standard of dentistry to a warm, boutique setting.
+      </p>
+      <div class="feature-grid">
+        <div class="feature-item"><i class="fa-solid fa-user-doctor"></i><span>Experienced Dentists</span></div>
+        <div class="feature-item"><i class="fa-solid fa-radiation"></i><span>Modern Equipment</span></div>
+        <div class="feature-item"><i class="fa-solid fa-couch"></i><span>Comfortable Clinic</span></div>
+        <div class="feature-item"><i class="fa-solid fa-hand-holding-dollar"></i><span>Affordable Treatment</span></div>
+        <div class="feature-item"><i class="fa-solid fa-heart-circle-check"></i><span>Patient Focused</span></div>
+      </div>
+      <a href="#appointment" class="btn btn-primary ripple">Book a Consultation</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services section section-alt" id="services">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What We Treat</span>
+      <h2 class="section-title">Comprehensive Dental Services</h2>
+      <p class="section-text">From routine checkups to full smile transformations — every treatment delivered with precision and care.</p>
+    </div>
+    <div class="services-grid" id="servicesGrid">
+      <!-- injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why section" id="why">
+  <div class="container why-grid">
+    <div class="why-media reveal-left">
+      <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?q=80&w=1000&auto=format&fit=crop" alt="Modern dental equipment">
+    </div>
+    <div class="why-content reveal-right">
+      <span class="eyebrow">Why Choose Us</span>
+      <h2 class="section-title">Dentistry Built Around Trust</h2>
+      <ul class="check-list">
+        <li><i class="fa-solid fa-circle-check"></i>Modern Technology</li>
+        <li><i class="fa-solid fa-circle-check"></i>Pain-Free Procedures</li>
+        <li><i class="fa-solid fa-circle-check"></i>Certified Specialists</li>
+        <li><i class="fa-solid fa-circle-check"></i>Digital X-Ray</li>
+        <li><i class="fa-solid fa-circle-check"></i>Flexible Appointments</li>
+        <li><i class="fa-solid fa-circle-check"></i>Affordable Pricing</li>
+        <li><i class="fa-solid fa-circle-check"></i>Emergency Care</li>
+        <li><i class="fa-solid fa-circle-check"></i>Friendly Staff</li>
+        <li><i class="fa-solid fa-circle-check"></i>Highest Safety Standards</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- DENTISTS -->
+<section class="dentists section section-alt" id="dentists">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Meet The Team</span>
+      <h2 class="section-title">Our Specialist Dentists</h2>
+    </div>
+    <div class="dentists-grid" id="dentistsGrid"></div>
+  </div>
+</section>
+
+<!-- STATISTICS -->
+<section class="stats">
+  <div class="container stats-grid">
+    <div class="stat-item">
+      <span class="stat-num" data-target="20">0</span><span class="stat-plus">+</span>
+      <p>Years Experience</p>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="15000">0</span><span class="stat-plus">+</span>
+      <p>Happy Patients</p>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="30">0</span><span class="stat-plus">+</span>
+      <p>Dental Experts</p>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="98">0</span><span class="stat-plus">%</span>
+      <p>Patient Satisfaction</p>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE & AFTER -->
+<section class="gallery section" id="gallery">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Real Results</span>
+      <h2 class="section-title">Before &amp; After Transformations</h2>
+    </div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Patient Stories</span>
+      <h2 class="section-title">What Our Patients Say</h2>
+    </div>
+    <div class="testimonial-slider" id="testimonialSlider">
+      <div class="testimonial-track" id="testimonialTrack"></div>
+      <div class="testimonial-dots" id="testimonialDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- APPOINTMENT FORM -->
+<section class="appointment section" id="appointment">
+  <div class="container appointment-grid">
+    <div class="appointment-media reveal-left">
+      <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=900&auto=format&fit=crop" alt="Modern treatment room">
+      <div class="appointment-badge"><i class="fa-solid fa-calendar-check"></i> Same-day slots available</div>
+    </div>
+    <div class="appointment-form-wrap reveal-right">
+      <span class="eyebrow">Book Your Visit</span>
+      <h2 class="section-title">Reserve Your Appointment</h2>
+      <form id="appointmentForm" class="appointment-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Jane Doe" required>
+            <span class="error-msg"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+971 50 000 0000" required>
+            <span class="error-msg"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="jane@email.com" required>
+            <span class="error-msg"></span>
+          </div>
+          <div class="form-group">
+            <label for="treatment">Treatment</label>
+            <select id="treatment" name="treatment" required>
+              <option value="">Select a treatment</option>
+              <option>General Dentistry</option>
+              <option>Dental Implants</option>
+              <option>Teeth Whitening</option>
+              <option>Orthodontics</option>
+              <option>Smile Makeover</option>
+              <option>Emergency Dental Care</option>
+            </select>
+            <span class="error-msg"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="date" required>
+            <span class="error-msg"></span>
+          </div>
+          <div class="form-group">
+            <label for="time">Preferred Time</label>
+            <input type="time" id="time" name="time" required>
+            <span class="error-msg"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="3" placeholder="Tell us more about your needs (optional)"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg ripple" id="formSubmitBtn">
+          <span>Confirm Appointment</span>
+        </button>
+        <div class="form-success" id="formSuccess">
+          <i class="fa-solid fa-circle-check"></i> Appointment request received — our team will confirm shortly.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq section section-alt" id="faq">
+  <div class="container faq-wrap">
+    <div class="section-head">
+      <span class="eyebrow">Good To Know</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+    </div>
+    <div class="accordion" id="accordion"></div>
+  </div>
+</section>
+
+<!-- FACILITIES -->
+<section class="facilities section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Inside Aurea</span>
+      <h2 class="section-title">Clinic Facilities</h2>
+    </div>
+    <div class="facilities-grid" id="facilitiesGrid"></div>
+  </div>
+</section>
+
+<!-- WORK PROCESS -->
+<section class="process section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">How It Works</span>
+      <h2 class="section-title">Your Journey To A Healthy Smile</h2>
+    </div>
+    <div class="process-timeline">
+      <div class="process-step reveal-up">
+        <div class="process-num">01</div>
+        <h3>Consultation</h3>
+        <p>A thorough discussion of your concerns, goals, and dental history.</p>
+      </div>
+      <div class="process-step reveal-up">
+        <div class="process-num">02</div>
+        <h3>Diagnosis</h3>
+        <p>Digital imaging and examination to map the ideal treatment path.</p>
+      </div>
+      <div class="process-step reveal-up">
+        <div class="process-num">03</div>
+        <h3>Treatment</h3>
+        <p>Precise, comfortable procedures using advanced technology.</p>
+      </div>
+      <div class="process-step reveal-up">
+        <div class="process-num">04</div>
+        <h3>Healthy Smile</h3>
+        <p>Ongoing care and follow-up to keep your smile at its best.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EMERGENCY BANNER -->
+<section class="emergency">
+  <div class="container emergency-inner">
+    <div>
+      <h2>Need Emergency Dental Care?</h2>
+      <p>24/7 Emergency Dental Services Available</p>
+    </div>
+    <a href="tel:+97145550199" class="btn btn-white ripple"><i class="fa-solid fa-phone-volume"></i> Call Now: +971 4 555 0199</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact section" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-info reveal-left">
+      <span class="eyebrow">Get In Touch</span>
+      <h2 class="section-title">Visit Our Clinic</h2>
+      <ul class="contact-list">
+        <li><i class="fa-solid fa-location-dot"></i><span>Level 14, Aurea Tower, Sheikh Zayed Road, Dubai, UAE</span></li>
+        <li><i class="fa-solid fa-phone"></i><span>+971 4 555 0192</span></li>
+        <li><i class="fa-brands fa-whatsapp"></i><span>+971 50 555 0192</span></li>
+        <li><i class="fa-solid fa-envelope"></i><span>hello@aureadental.ae</span></li>
+        <li><i class="fa-solid fa-clock"></i><span>Sat–Thu: 9AM – 9PM · Fri: Emergency Only</span></li>
+      </ul>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="contact-map reveal-right">
+      <iframe title="Clinic location map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462560.0!2d55.1562!3d25.0762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!5e0!3m2!1sen!2sae!4v1610000000000" loading="lazy" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="nav-logo">
+        <span class="logo-mark">A</span>
+        <span class="logo-text">AUREA<span>DENTAL</span></span>
+      </a>
+      <p>Luxury dentistry, personalized care. Your smile deserves nothing less.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#dentists">Our Dentists</a>
+      <a href="#gallery">Results</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="#services">Dental Implants</a>
+      <a href="#services">Teeth Whitening</a>
+      <a href="#services">Orthodontics</a>
+      <a href="#services">Smile Makeover</a>
+      <a href="#services">Emergency Care</a>
+    </div>
+    <div class="footer-col footer-newsletter">
+      <h4>Newsletter</h4>
+      <p>Smile tips &amp; offers, once a month.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Your email" required>
+        <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Aurea Dental Clinic. All rights reserved.</p>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING FEATURES -->
+<a href="https://wa.me/971505550192" class="float-btn whatsapp-btn" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+<button class="float-btn back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
