@@ -109,25 +109,25 @@ document.addEventListener('DOMContentLoaded', () => {
   ];
 
   const dentists = [
-    { name:'Dr. Layla Haddad', role:'Cosmetic Dentistry', exp:'15 years experience', img:'https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=500&auto=format&fit=crop' },
-    { name:'Dr. Omar Al Fassi', role:'Dental Implants', exp:'18 years experience', img:'https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=500&auto=format&fit=crop' },
-    { name:'Dr. Sarah Nakamura', role:'Orthodontics', exp:'12 years experience', img:'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?q=80&w=500&auto=format&fit=crop' },
-    { name:'Dr. Karim Idris', role:'Pediatric Dentistry', exp:'10 years experience', img:'https://images.unsplash.com/photo-1637059824899-a441006a6875?q=80&w=500&auto=format&fit=crop' },
+    { name:'Dr. Layla Haddad', role:'Cosmetic Dentistry', exp:'15 years experience', img:'https://picsum.photos/seed/dentist-1/500/600' },
+    { name:'Dr. Omar Al Fassi', role:'Dental Implants', exp:'18 years experience', img:'https://picsum.photos/seed/dentist-2/500/600' },
+    { name:'Dr. Sarah Nakamura', role:'Orthodontics', exp:'12 years experience', img:'https://picsum.photos/seed/dentist-3/500/600' },
+    { name:'Dr. Karim Idris', role:'Pediatric Dentistry', exp:'10 years experience', img:'https://picsum.photos/seed/dentist-4/500/600' },
   ];
 
   const galleryItems = [
-    { img:'https://images.unsplash.com/photo-1581585095852-a4c9a5c5b8b8?q=80&w=700&auto=format&fit=crop', label:'Smile Makeover' },
-    { img:'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=700&auto=format&fit=crop', label:'Teeth Whitening' },
-    { img:'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=700&auto=format&fit=crop', label:'Veneers' },
-    { img:'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?q=80&w=700&auto=format&fit=crop', label:'Implants' },
-    { img:'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=700&auto=format&fit=crop', label:'Orthodontics' },
-    { img:'https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=700&auto=format&fit=crop', label:'Full Transformation' },
+    { img:'https://picsum.photos/seed/smile-makeover/700/525', label:'Smile Makeover' },
+    { img:'https://picsum.photos/seed/teeth-whitening/700/525', label:'Teeth Whitening' },
+    { img:'https://picsum.photos/seed/dental-veneers/700/525', label:'Veneers' },
+    { img:'https://picsum.photos/seed/dental-implant/700/525', label:'Implants' },
+    { img:'https://picsum.photos/seed/orthodontics/700/525', label:'Orthodontics' },
+    { img:'https://picsum.photos/seed/full-transformation/700/525', label:'Full Transformation' },
   ];
 
   const testimonials = [
-    { name:'Sarah Williams', treatment:'Verified Patient', img:'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop', quote:'I had an amazing experience. The doctors were professional, caring, and made me feel completely comfortable throughout my treatment.' },
-    { name:'Ahmed Hassan', treatment:'Verified Patient', img:'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop', quote:'Excellent service with modern equipment. The clinic is spotless and the staff are incredibly friendly.' },
-    { name:'Emily Johnson', treatment:'Verified Patient', img:'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop', quote:'The best dental clinic I\u2019ve visited in Dubai. Highly recommended for anyone looking for quality dental care.' },
+    { name:'Sarah Williams', treatment:'Verified Patient', img:'https://picsum.photos/seed/patient-1/200/200', quote:'I had an amazing experience. The doctors were professional, caring, and made me feel completely comfortable throughout my treatment.' },
+    { name:'Ahmed Hassan', treatment:'Verified Patient', img:'https://picsum.photos/seed/patient-2/200/200', quote:'Excellent service with modern equipment. The clinic is spotless and the staff are incredibly friendly.' },
+    { name:'Emily Johnson', treatment:'Verified Patient', img:'https://picsum.photos/seed/patient-3/200/200', quote:'The best dental clinic I\u2019ve visited in Dubai. Highly recommended for anyone looking for quality dental care.' },
   ];
 
   const faqs = [
@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
     el.className = 'dentist-card reveal-up';
     el.innerHTML = `
       <div class="dentist-photo">
-        <img src="${d.img}" alt="${d.name}, ${d.role}" loading="lazy">
+        <img src="${d.img}" alt="${d.name}, ${d.role}" width="500" height="600" loading="lazy">
         <div class="dentist-social">
           <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
           <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const el = document.createElement('div');
     el.className = 'gallery-item reveal-up';
     el.innerHTML = `
-      <img src="${g.img}" alt="${g.label} result" loading="lazy">
+      <img src="${g.img}" alt="${g.label} result" width="700" height="525" loading="lazy">
       <div class="gallery-overlay"><span>${g.label}</span></div>
     `;
     el.addEventListener('click', () => openLightbox(g.img, g.label));
@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <span class="stars">★★★★★</span>
         <p class="quote">"${t.quote}"</p>
         <div class="testimonial-person">
-          <img src="${t.img}" alt="${t.name}" loading="lazy">
+          <img src="${t.img}" alt="${t.name}" width="200" height="200" loading="lazy">
           <div>
             <strong>${t.name}</strong>
             <span>${t.treatment}</span>
