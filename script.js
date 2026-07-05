@@ -109,25 +109,25 @@ document.addEventListener('DOMContentLoaded', () => {
   ];
 
   const dentists = [
-    { name:'Dr. Layla Haddad', role:'Cosmetic Dentistry', exp:'15 years experience', img:'https://images.pexels.com/photos/7578806/pexels-photo-7578806.jpeg?auto=compress&cs=tinysrgb&w=500', fallback:'https://images.pexels.com/photos/30004322/pexels-photo-30004322.jpeg?auto=compress&cs=tinysrgb&w=500' },
-    { name:'Dr. Omar Al Fassi', role:'Dental Implants', exp:'18 years experience', img:'https://images.pexels.com/photos/6129500/pexels-photo-6129500.jpeg?auto=compress&cs=tinysrgb&w=500', fallback:'https://images.pexels.com/photos/4989179/pexels-photo-4989179.jpeg?auto=compress&cs=tinysrgb&w=500' },
-    { name:'Dr. Sarah Nakamura', role:'Orthodontics', exp:'12 years experience', img:'https://images.pexels.com/photos/30004322/pexels-photo-30004322.jpeg?auto=compress&cs=tinysrgb&w=500', fallback:'https://images.pexels.com/photos/29852895/pexels-photo-29852895.jpeg?auto=compress&cs=tinysrgb&w=500' },
-    { name:'Dr. Karim Idris', role:'Pediatric Dentistry', exp:'10 years experience', img:'https://images.pexels.com/photos/19438560/pexels-photo-19438560.jpeg?auto=compress&cs=tinysrgb&w=500', fallback:'https://images.pexels.com/photos/6129500/pexels-photo-6129500.jpeg?auto=compress&cs=tinysrgb&w=500' },
+    { name:'Dr. Layla Haddad', role:'Cosmetic Dentistry', exp:'15 years experience', img:'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80' },
+    { name:'Dr. Omar Al Fassi', role:'Dental Implants', exp:'18 years experience', img:'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80' },
+    { name:'Dr. Sarah Nakamura', role:'Orthodontics', exp:'12 years experience', img:'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1200&q=80' },
+    { name:'Dr. Karim Idris', role:'Pediatric Dentistry', exp:'10 years experience', img:'https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=1200&q=80' },
   ];
 
   const galleryItems = [
-    { img:'https://images.pexels.com/photos/5355841/pexels-photo-5355841.jpeg?auto=compress&cs=tinysrgb&w=700', fallback:'https://images.pexels.com/photos/4270095/pexels-photo-4270095.jpeg?auto=compress&cs=tinysrgb&w=700', label:'Smile Makeover' },
-    { img:'https://images.pexels.com/photos/3952130/pexels-photo-3952130.jpeg?auto=compress&cs=tinysrgb&w=700', fallback:'https://images.pexels.com/photos/5355903/pexels-photo-5355903.jpeg?auto=compress&cs=tinysrgb&w=700', label:'Teeth Whitening' },
-    { img:'https://images.pexels.com/photos/4270095/pexels-photo-4270095.jpeg?auto=compress&cs=tinysrgb&w=700', fallback:'https://images.pexels.com/photos/3952130/pexels-photo-3952130.jpeg?auto=compress&cs=tinysrgb&w=700', label:'Veneers' },
-    { img:'https://images.pexels.com/photos/7800669/pexels-photo-7800669.jpeg?auto=compress&cs=tinysrgb&w=700', fallback:'https://images.pexels.com/photos/7800675/pexels-photo-7800675.jpeg?auto=compress&cs=tinysrgb&w=700', label:'Implants' },
-    { img:'https://images.pexels.com/photos/4269940/pexels-photo-4269940.jpeg?auto=compress&cs=tinysrgb&w=700', fallback:'https://images.pexels.com/photos/6812526/pexels-photo-6812526.jpeg?auto=compress&cs=tinysrgb&w=700', label:'Orthodontics' },
-    { img:'https://images.pexels.com/photos/4270939/pexels-photo-4270939.jpeg?auto=compress&cs=tinysrgb&w=700', fallback:'https://images.pexels.com/photos/4269946/pexels-photo-4269946.jpeg?auto=compress&cs=tinysrgb&w=700', label:'Full Transformation' },
+    { img:'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1200&q=80', label:'Smile Makeover' },
+    { img:'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80', label:'Teeth Whitening' },
+    { img:'https://images.unsplash.com/photo-1588776813677-77aaf5595b83?auto=format&fit=crop&w=1200&q=80', label:'Veneers' },
+    { img:'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1200&q=80', label:'Implants' },
+    { img:'https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=1200&q=80', label:'Orthodontics' },
+    { img:'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80', label:'Full Transformation' },
   ];
 
   const testimonials = [
-    { name:'Sarah Williams', treatment:'Verified Patient', img:'https://images.pexels.com/photos/29852895/pexels-photo-29852895.jpeg?auto=compress&cs=tinysrgb&w=200', fallback:'https://images.pexels.com/photos/7578806/pexels-photo-7578806.jpeg?auto=compress&cs=tinysrgb&w=200', quote:'I had an amazing experience. The doctors were professional, caring, and made me feel completely comfortable throughout my treatment.' },
-    { name:'Ahmed Hassan', treatment:'Verified Patient', img:'https://images.pexels.com/photos/19456424/pexels-photo-19456424.jpeg?auto=compress&cs=tinysrgb&w=200', fallback:'https://images.pexels.com/photos/6129500/pexels-photo-6129500.jpeg?auto=compress&cs=tinysrgb&w=200', quote:'Excellent service with modern equipment. The clinic is spotless and the staff are incredibly friendly.' },
-    { name:'Emily Johnson', treatment:'Verified Patient', img:'https://images.pexels.com/photos/4269501/pexels-photo-4269501.jpeg?auto=compress&cs=tinysrgb&w=200', fallback:'https://images.pexels.com/photos/30004322/pexels-photo-30004322.jpeg?auto=compress&cs=tinysrgb&w=200', quote:'The best dental clinic I\u2019ve visited in Dubai. Highly recommended for anyone looking for quality dental care.' },
+    { name:'Sarah Williams', treatment:'Verified Patient', img:'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80', quote:'I had an amazing experience. The doctors were professional, caring, and made me feel completely comfortable throughout my treatment.' },
+    { name:'Ahmed Hassan', treatment:'Verified Patient', img:'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1200&q=80', quote:'Excellent service with modern equipment. The clinic is spotless and the staff are incredibly friendly.' },
+    { name:'Emily Johnson', treatment:'Verified Patient', img:'https://images.unsplash.com/photo-1588776813677-77aaf5595b83?auto=format&fit=crop&w=1200&q=80', quote:'The best dental clinic I\u2019ve visited in Dubai. Highly recommended for anyone looking for quality dental care.' },
   ];
 
   const faqs = [
@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
     el.className = 'dentist-card reveal-up';
     el.innerHTML = `
       <div class="dentist-photo">
-        <img src="${d.img}" data-fallback="${d.fallback}" onerror="__imgFallback(this)" alt="${d.name}, ${d.role}" width="500" height="600" loading="lazy" decoding="async">
+        <img src="${d.img}" alt="${d.name}, ${d.role}" width="500" height="600" loading="lazy" decoding="async" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80';">
         <div class="dentist-social">
           <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
           <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const el = document.createElement('div');
     el.className = 'gallery-item reveal-up';
     el.innerHTML = `
-      <img src="${g.img}" data-fallback="${g.fallback}" onerror="__imgFallback(this)" alt="${g.label} result" width="700" height="525" loading="lazy" decoding="async">
+      <img src="${g.img}" alt="${g.label} result" width="700" height="525" loading="lazy" decoding="async" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80';">
       <div class="gallery-overlay"><span>${g.label}</span></div>
     `;
     const imgEl = el.querySelector('img');
@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <span class="stars">★★★★★</span>
         <p class="quote">"${t.quote}"</p>
         <div class="testimonial-person">
-          <img src="${t.img}" data-fallback="${t.fallback}" onerror="__imgFallback(this)" alt="${t.name}" width="200" height="200" loading="lazy" decoding="async">
+          <img src="${t.img}" alt="${t.name}" width="200" height="200" loading="lazy" decoding="async" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80';">
           <div>
             <strong>${t.name}</strong>
             <span>${t.treatment}</span>
@@ -283,7 +283,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxImg = document.getElementById('lightboxImg');
   const lightboxClose = document.getElementById('lightboxClose');
   function openLightbox(src, alt){
-    lightboxImg.onerror = function(){ window.__imgFallback(lightboxImg); };
+    lightboxImg.onerror = function(){
+      lightboxImg.onerror = null;
+      lightboxImg.src = 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80';
+    };
     lightboxImg.src = src;
     lightboxImg.alt = alt;
     lightbox.classList.add('active');
