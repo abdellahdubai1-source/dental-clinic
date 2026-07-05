@@ -1,31 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script>
-  // Bulletproof image fallback: primary source -> secondary source -> branded inline placeholder (never fails).
-  window.__brandedImgPlaceholder = 'data:image/svg+xml,' + encodeURIComponent(
-    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">' +
-    '<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">' +
-    '<stop offset="0%" stop-color="#0F6CBD"/><stop offset="100%" stop-color="#19B8A7"/>' +
-    '</linearGradient></defs>' +
-    '<rect width="400" height="300" fill="url(#g)"/>' +
-    '<g transform="translate(200,124)" fill="none" stroke="#ffffff" stroke-width="4" opacity="0.9">' +
-    '<path d="M0-58c-27 0-42 15-60 15-24 0-45 21-45 60 0 42 18 69 27 102 6 27 15 51 33 51 21 0 21-42 45-42s24 42 45 42c18 0 27-24 33-51 9-33 27-60 27-102 0-39-21-60-45-60-18 0-33-15-60-15z"/>' +
-    '</g>' +
-    '<text x="200" y="232" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="17" fill="#ffffff" opacity="0.95">Bright Smile Dental Clinic</text>' +
-    '</svg>'
-  );
-  window.__imgFallback = function(img){
-    var fb = img.getAttribute('data-fallback');
-    if (fb) {
-      img.setAttribute('data-fallback', '');
-      img.src = fb;
-    } else if (img.src !== window.__brandedImgPlaceholder) {
-      img.onerror = null;
-      img.src = window.__brandedImgPlaceholder;
-    }
-  };
-</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bright Smile Dental Clinic — Creating Beautiful Smiles with Advanced Dental Care</title>
@@ -45,7 +20,7 @@
   "@context": "https://schema.org",
   "@type": "Dentist",
   "name": "Bright Smile Dental Clinic",
-  "image": "https://images.pexels.com/photos/33812025/pexels-photo-33812025.jpeg?auto=compress&cs=tinysrgb&w=1200",
+  "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80",
   "telephone": "+971-58-119-7208",
   "email": "info@brightsmiledental.ae",
   "address": {
@@ -116,7 +91,7 @@
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-bg">
-    <img src="https://images.pexels.com/photos/33812025/pexels-photo-33812025.jpeg?auto=compress&cs=tinysrgb&w=1920" data-fallback="https://images.pexels.com/photos/7800666/pexels-photo-7800666.jpeg?auto=compress&cs=tinysrgb&w=1920" onerror="__imgFallback(this)" alt="Bright Smile Dental Clinic reception and treatment area" width="1920" height="1080" loading="eager" decoding="async">
+    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80" alt="Bright Smile Dental Clinic reception and treatment area" width="1920" height="1080" loading="eager" decoding="async" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80';">
     <div class="hero-overlay"></div>
   </div>
   <div class="hero-shapes">
@@ -169,8 +144,8 @@
 <section class="about section" id="about">
   <div class="container about-grid">
     <div class="about-media reveal-left">
-      <img src="https://images.pexels.com/photos/4989179/pexels-photo-4989179.jpeg?auto=compress&cs=tinysrgb&w=800" data-fallback="https://images.pexels.com/photos/7578806/pexels-photo-7578806.jpeg?auto=compress&cs=tinysrgb&w=800" onerror="__imgFallback(this)" alt="Dentist at Bright Smile Dental Clinic" class="about-img-main" width="800" height="1000" loading="lazy" decoding="async">
-      <img src="https://images.pexels.com/photos/3845724/pexels-photo-3845724.jpeg?auto=compress&cs=tinysrgb&w=500" data-fallback="https://images.pexels.com/photos/6812562/pexels-photo-6812562.jpeg?auto=compress&cs=tinysrgb&w=500" onerror="__imgFallback(this)" alt="Modern dental treatment room" class="about-img-float" width="500" height="375" loading="lazy" decoding="async">
+      <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80" alt="Professional dentist portrait" class="about-img-main" width="800" height="1000" loading="lazy" decoding="async" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80';">
+      <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1200&q=80" alt="Modern dental treatment room" class="about-img-float" width="500" height="375" loading="lazy" decoding="async" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80';">
       <div class="about-badge">
         <strong>20+</strong>
         <span>Years of<br>Excellence</span>
@@ -212,7 +187,7 @@
 <section class="why section" id="why">
   <div class="container why-grid">
     <div class="why-media reveal-left">
-      <img src="https://images.pexels.com/photos/4269688/pexels-photo-4269688.jpeg?auto=compress&cs=tinysrgb&w=900" data-fallback="https://images.pexels.com/photos/6502635/pexels-photo-6502635.jpeg?auto=compress&cs=tinysrgb&w=900" onerror="__imgFallback(this)" alt="Modern dental equipment" width="900" height="600" loading="lazy" decoding="async">
+      <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1200&q=80" alt="Modern dental equipment" width="900" height="600" loading="lazy" decoding="async" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80';">
     </div>
     <div class="why-content reveal-right">
       <span class="eyebrow">Why Choose Us</span>
@@ -295,7 +270,7 @@
 <section class="appointment section" id="appointment">
   <div class="container appointment-grid">
     <div class="appointment-media reveal-left">
-      <img src="https://images.pexels.com/photos/6812562/pexels-photo-6812562.jpeg?auto=compress&cs=tinysrgb&w=800" data-fallback="https://images.pexels.com/photos/4269688/pexels-photo-4269688.jpeg?auto=compress&cs=tinysrgb&w=800" onerror="__imgFallback(this)" alt="Modern treatment room" width="800" height="1000" loading="lazy" decoding="async">
+      <img src="https://images.unsplash.com/photo-1588776813677-77aaf5595b83?auto=format&fit=crop&w=1200&q=80" alt="Modern treatment room" width="800" height="1000" loading="lazy" decoding="async" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80';">
       <div class="appointment-badge"><i class="fa-solid fa-calendar-check"></i> Same-day slots available</div>
     </div>
     <div class="appointment-form-wrap reveal-right">
@@ -532,7 +507,7 @@
 <!-- Lightbox -->
 <div class="lightbox" id="lightbox">
   <button class="lightbox-close" id="lightboxClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-  <img id="lightboxImg" src="" alt="" decoding="async">
+  <img id="lightboxImg" src="" alt="" decoding="async" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80';">
 </div>
 
 <script src="script.js"></script>
